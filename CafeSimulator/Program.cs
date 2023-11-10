@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Cafe cafe = new Cafe();
+            Cafe cafe = new Cafe(50000);
 
             Console.ReadKey();
         }
