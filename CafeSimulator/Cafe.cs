@@ -8,15 +8,23 @@ namespace CafeSimulator
 {
     internal class Cafe
     {
-        /* TODO:
-         * - Hire method for new employees
-         * - SumOfSalaries that sums the total amount of salary for all employees together
-         * - netWorth should update each time a customer shops, add shop sum to netWorth.
-         * - When buying more products into inventory: decrease total cost from netWorth.
-        */
         public int NetWorth { get; private set; }
         public int NumberOfEmployees { get; private set; }
 
         private List<Fika> _inventory;
+        private int restockQuantity = 5;
+
+        public Cafe(int capital)
+        {
+            _inventory = new List<Fika>();
+            NetWorth = capital;
+        }
+
+        public void Restock(List<Fika> items)
+        {
+            // TODO:
+            // For each item, add {restockQuantity} items to inventory
+            // decrease networth with the cost of all items
+        }
     }
 }
